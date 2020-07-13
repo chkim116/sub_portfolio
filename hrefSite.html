@@ -5,12 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hrefSite</title>
     <link rel="icon" href="image/microblog-brands.png">
-
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
     <style>
+
+        * {
+            box-sizing: border-box;
+            background-color: #f7f1e3;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        h2 {
+            color: #2f3542;
+        }
+
+
         .header {
             height: 20vh;
             background-image: url("image/4.jpg");
             background: center cover;
+            text-align: center;
+            line-height: 20vh;
+            font-size: 2rem;
         }
         #nav {
             max-width: 1200px;
@@ -33,20 +48,57 @@
             cursor: pointer;
         }
 
+        .navend {
+            height: 30px;
+        }
+
         #article {
             display: flex;
+            flex-wrap: wrap;
             max-width: 1200px;
             margin: 0 auto;
         }
 
         .site__list {
-            width: 33.3%
+            width: 33.3%;
+            position: relative;
+        }
+
+        .site__list-img {
+            border-radius: 6px;
+            padding: 12px;
+        }
+
+        .site__list-description > h2 {
+            text-align: center;
+            margin: 0;
+        }
+
+        .site__list-hoverdesc {
+            position: absolute;
+            width: 400px;
+            height: 300px;
+            background-color: rgba(53,59,72,0.8);
+            top: 0;
+            line-height: 280px;
+            border-radius: 20px;
+            color: #ecf0f1;
+            font-size: 1.3rem;
+            text-align: center;
+            font-weight: 900;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .site__list-hoverdesc:hover {
+            opacity: 1;
+            cursor: pointer;
         }
 
     </style>
 </head>
 <body>
-    <div class="header"></div>
+    <div class="header">Do you wanna Go?</div>
     <nav id="nav">
         <div class="navbar">
             <div class="navbar__list">All</div>
@@ -56,74 +108,147 @@
             <div class="navbar__list">Mdn/Etc</div>
         </div>
     </nav>
+<div class="navend"></div>
 
     <section id="section">
         <article id="article">
 
             <div class="site__list">
-                <div class="site__list-img"><img src="image/fontawsome.jpg" href="https://fontawesome.com/"></div>
+                <div class="site__list-item">
+                    <a href="https://fontawesome.com/" target="blank">
+                    <img src="image/fontawsome.jpg" width="400px" height="300px" class="site__list-img">
+                </div>
+                <div class="site__list-hoverdesc">
+                    아이콘 및 로고 등을 제공
+                </div>
+                    </a>
+
                 <div class="site__list-description">
-                    <p>폰트어썸</p>
-                    <button>바로가기</button>
+                    <h2>FontAwesome</h2>
                 </div>    
             </div>
 
 
             <div class="site__list">
-                <div class="site__list-img"><img src="image/russn_fckr-krV5aS4jDjA-unsplash.jpg" href="https://flatuicolors.com/"> </div>
+                <div class="site__list-item">
+                    <a href="https://flatuicolors.com/" target="blank">
+                        <img src="image/russn_fckr-krV5aS4jDjA-unsplash.jpg" width="400px" height="300px" class="site__list-img"> 
+                    </div>
+                    <div class="site__list-hoverdesc">
+                        UI 색상을 제공
+                    </div>
+                </a>
                 <div class="site__list-description">
-                    <p>플랫컬러스</p>
-                    <button>바로가기</button>
-                </div>    
+                   <h2>FlatuiColors</h2>
+                      </div>    
+            </div>
             </div>
            
             <div class="site__list">
-                <div class="site__list-img"> <img src="image/unsplash.jpg" href="unsplash.com"> </div>
-                <div class="site__list-description">
-                    <p>언스플래쉬</p>
-                    <button>바로가기</button>
-                </div>    
+                <div class="site__list-item">
+                    <a href="unsplash.com" target="blank"> 
+                        <img src="image/unsplash.jpg" width="400px" height="300px" class="site__list-img"> 
+                    </div>
+                    <div class="site__list-hoverdesc">
+                        고화질의 저작권 무료 이미지를 제공
+                    </div>
+                </a>
+                            <div class="site__list-description">
+                                <h2>Unsplash</h2>
+                            </div>    
+            </div>
             </div>
 
             <div class="site__list">
-                <div class="site__list-img"> <img src="image/pixabay.jpg" href="https://pixabay.com/ko/"></div>
-                <div class="site__list-description">
-                    <p>픽사베이</p>
-                    <button>바로가기</button>
-                </div>    
+                <div class="site__list-item">
+                    <a href="https://pixabay.com/ko/" target="blank">
+                        <img src="image/pixabay.jpg" width="400px" height="300px" class="site__list-img"> 
+                    </div>
+                    <div class="site__list-hoverdesc">
+                        고화질의 저작권 무료 이미지를 제공
+                    </div>
+                </a>
+                            <div class="site__list-description">
+                                <h2>Pixabay</h2>
+                            </div>    
+            </div>
             </div>
             
             <div class="site__list">
-                <div class="site__list-img"><img src="image/javascript.jpg" href="https://ko.javascript.info/"></div>
-                <div class="site__list-description">
-                    <p>자바스크립트</p>
-                    <button>바로가기</button>
-                </div>    
+                <a href="https://ko.javascript.info/" target="blank">
+                    <div class="site__list-item"><img src="image/javascript.jpg" width="400px" height="300px" class="site__list-img"> 
+                    </div>
+                    <div class="site__list-hoverdesc">
+                        자바스크립트 INFO
+                    </div>
+                </a>
+                            <div class="site__list-description">
+                                <h2>JAVASCRIPT INFO</h2>
+                            </div>    
+            </div>
             </div>
             
             <div class="site__list">
-                <div class="site__list-img"> <img src="image/mdn.jpg" href="https://developer.mozilla.org/ko/"></div>
-                <div class="site__list-description">
-                    <p>MDN</p>
-                    <button>바로가기</button>
-                </div>    
+                <div class="site__list-item">
+                    <a href="https://developer.mozilla.org/ko/" target="blank">
+                        <img src="image/mdn.jpg" width="400px" height="300px" class="site__list-img"> 
+                    </div>
+                    <div class="site__list-hoverdesc">
+                        HTML/CSS/JS 공식 사이트
+                    </div>
+                </a>
+                            <div class="site__list-description">
+                                <h2>MDN</h2>
+                            </div>    
+            </div>
             </div>
 
             <div class="site__list">
-                <div class="site__list-img"> <img src="" href="https://www.youtube.com/watch?v=wcsVjmHrUQg&list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2"></div>
-                <div class="site__list-description">
-                    <p>드림코딩</p>
-                    <button>바로가기</button>
-                </div>    
+                <div class="site__list-item">
+                    <a href="https://fonts.google.com/" target="blank">
+                        <img src="image/google.jpg" width="400px" height="300px" class="site__list-img"> 
+                    </div>
+                    <div class="site__list-hoverdesc">
+                        무료 폰트를 제공
+                    </div>
+                </a>
+                            <div class="site__list-description">
+                                <h2>Google Web Fonts</h2>
+                            </div>    
+            </div>
             </div>
 
+
             <div class="site__list">
-                <div class="site__list-img"> <img src="" href="https://nomadcoders.co/"></div>
-                <div class="site__list-description">
-                    <p>노마드코더</p>
-                    <button>바로가기</button>
-                </div>    
-            </div>
+                <div class="site__list-item">
+                    <a href="https://www.youtube.com/watch?v=wcsVjmHrUQg&list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2" target="blank">
+                        <img src="" width="400px" height="300px" class="site__list-img"> 
+                    </div>
+                    <div class="site__list-hoverdesc">
+                        드림코딩님의 자바스크립트 강의 영상
+                    </div>
+                </a>
+                    <div class="site__list-description">
+                                <h2>Dream Coding</h2>
+                                </div>    
+                </div>
+                </div>
+    
+            <div class="site__list">
+                <div class="site__list-item">
+                    <a href="https://nomadcoders.co/" target="blank">
+                        <img src="" width="400px" height="300px" class="site__list-img"> 
+                    </div>
+                    <div class="site__list-hoverdesc">
+                        노마드 코더님의 강의 사이트
+                    </div>
+                </a>
+                            <div class="site__list-description">
+                                <h2>Nomad Coder</h2>
+                                </div>    
+                </div>
+                </div>
+    
 
 
         </article>
