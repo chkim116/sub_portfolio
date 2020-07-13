@@ -131,9 +131,12 @@
             font-weight: 900;
             opacity: 0;
             cursor: pointer;
+            transition: all 300ms;
+            transform: translateY(30px);
         }
-
+        
         .site__list-hoverdesc:hover {
             opacity: 1;
             cursor: pointer;
+            transform: translateY(0px);
         }
