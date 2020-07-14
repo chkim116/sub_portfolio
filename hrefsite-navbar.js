@@ -34,7 +34,7 @@ function clickList () {
                     }
                 });
                 listContainer.classList.remove('anim-out');
-            }, 400)
+            }, 350)
             
         });
         
