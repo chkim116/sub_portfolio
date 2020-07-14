@@ -140,3 +140,34 @@
             cursor: pointer;
             transform: translateY(0px);
         }
+
+
+
+    @media all and (max-width: 768px) {
+
+
+        .site__list {
+            width: 50%;
+        
+        }
+
+        .searchbar {
+            margin-top: 10px;
+            margin-bottom: 60px;
+        }
+
+    }
+
+
+    @media all and (max-width: 476px) {
+
+
+        .site__list {
+            width: 100%;
+        }
+        
+        .searchbar {
+            width: 70%;
+        }
+
+    }
