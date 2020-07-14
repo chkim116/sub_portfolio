@@ -68,7 +68,7 @@
         }
         .navbar {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
         }
         
         .navbar__list {
@@ -81,7 +81,7 @@
             cursor: pointer;
         }
         
-        .active {
+        .selected {
             background-color: #e55039;
         }
 
@@ -100,6 +100,13 @@
             max-width: 1200px;
             margin: 0 auto;
             padding-bottom: 200px;
+            opacity: 1;
+            transition: all 350ms ease-in;
+        }
+
+        #article.anim-out {
+            opacity: 0;
+            transform: translateY(60px);
         }
 
         .site__list {
@@ -139,6 +146,11 @@
             opacity: 1;
             cursor: pointer;
             transform: translateY(0px);
+        }
+
+
+        .site__list.invisible {
+            display: none;
         }
 
 

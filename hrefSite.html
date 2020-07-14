@@ -19,11 +19,10 @@
     </form>
     <nav id="nav">
         <div class="navbar">
-            <div class="navbar__list active">All</div>
-            <div class="navbar__list">Html</div>
-            <div class="navbar__list">Css</div>
-            <div class="navbar__list">Js</div>
-            <div class="navbar__list">Mdn/Etc</div>
+            <div class="navbar__list selected" data-filter="*">All</div>
+            <div class="navbar__list" data-filter="html/css">HTML/CSS</div>
+            <div class="navbar__list" data-filter="js">Js</div>
+            <div class="navbar__list" data-filter="mdn/etn">Mdn/Etc</div>
         </div>
     </nav>
     <div class="navend"></div>
@@ -31,24 +30,24 @@
     <section id="section">
         <article id="article">
             
-            <div class="site__list">
-                <div class="site__list-item">
-                    <a href="https://fontawesome.com/" target="blank">
+            <div class="site__list" data-type="html/css">
+                <div class="site__list-item" >
+                    <a href="https://fontawesome.com/" target="blank" >
                     <img src="image/fontawsome.jpg" width="100%" height="300px" class="site__list-img">
                 </div>
                 <div class="site__list-hoverdesc">
                     아이콘 및 로고 등 제공
                 </div>
-                    </a>
-
+                
+            </a>
                 <div class="site__list-description">
                     <h2>FontAwesome</h2>
                 </div>    
             </div>
 
 
-            <div class="site__list">
-                <div class="site__list-item">
+            <div class="site__list" data-type="html/css">
+                <div class="site__list-item" >
                     <a href="https://flatuicolors.com/" target="blank">
                         <img src="image/russn_fckr-krV5aS4jDjA-unsplash.jpg" width="100%" height="300px" class="site__list-img"> 
                     </div>
@@ -62,9 +61,9 @@
             </div>
             </div>
            
-            <div class="site__list">
-                <div class="site__list-item">
-                    <a href="unsplash.com" target="blank"> 
+            <div class="site__list" data-type="html/css">
+                <div class="site__list-item" >
+                    <a href="unsplash.com" target="blank" > 
                         <img src="image/unsplash.jpg" width="100%" height="300px" class="site__list-img"> 
                     </div>
                     <div class="site__list-hoverdesc">
@@ -77,9 +76,9 @@
             </div>
             </div>
 
-            <div class="site__list">
-                <div class="site__list-item">
-                    <a href="https://pixabay.com/ko/" target="blank">
+            <div class="site__list" data-type="html/css">
+                <div class="site__list-item" >
+                    <a href="https://pixabay.com/ko/" target="blank" >
                         <img src="image/pixabay.jpg" width="100%" height="300px" class="site__list-img"> 
                     </div>
                     <div class="site__list-hoverdesc">
@@ -92,8 +91,8 @@
             </div>
             </div>
             
-            <div class="site__list">
-                <a href="https://ko.javascript.info/" target="blank">
+            <div class="site__list" data-type="mdn/etn">
+                <a href="https://ko.javascript.info/" target="blank" >
                     <div class="site__list-item"><img src="image/javascript.jpg" width="100%" height="300px" class="site__list-img"> 
                     </div>
                     <div class="site__list-hoverdesc">
@@ -106,9 +105,9 @@
             </div>
             </div>
             
-            <div class="site__list">
-                <div class="site__list-item">
-                    <a href="https://developer.mozilla.org/ko/" target="blank">
+            <div class="site__list" data-type="mdn/etn">
+                <div class="site__list-item" >
+                    <a href="https://developer.mozilla.org/ko/" target="blank" >
                         <img src="image/mdn.jpg" width="100%" height="300px" class="site__list-img"> 
                     </div>
                     <div class="site__list-hoverdesc">
@@ -121,9 +120,9 @@
             </div>
             </div>
 
-            <div class="site__list">
-                <div class="site__list-item">
-                    <a href="https://fonts.google.com/" target="blank">
+            <div class="site__list" data-type="html/css">
+                <div class="site__list-item" >
+                    <a href="https://fonts.google.com/" target="blank" >
                         <img src="image/google.jpg" width="100%" height="300px" class="site__list-img"> 
                     </div>
                     <div class="site__list-hoverdesc">
@@ -136,9 +135,9 @@
             </div>
             </div>
 
-            <div class="site__list">
-                <div class="site__list-item">
-                    <a href="https://canva.com" target="blank">
+            <div class="site__list" data-type="html/css">
+                <div class="site__list-item" >
+                    <a href="https://canva.com" target="blank" >
                         <img src="image/canva.png" width="100%" height="300px" class="site__list-img"> 
                     </div>
                     <div class="site__list-hoverdesc">
@@ -151,8 +150,8 @@
                 </div>
                 </div>
                 
-                <div class="site__list">
-                    <div class="site__list-item">
+                <div class="site__list" data-type="js">
+                    <div class="site__list-item" >
                         <a href="https://www.youtube.com/watch?v=wcsVjmHrUQg&list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2" target="blank">
                             <img src="image/dreamcoding.jpg" width="100%" height="300px" class="site__list-img"> 
                         </div>
@@ -166,9 +165,9 @@
                 </div>
             </div>
             
-            <div class="site__list">
+            <div class="site__list"  data-type="js">
                 <div class="site__list-item">
-                    <a href="https://nomadcoders.co/" target="blank">
+                    <a href="https://nomadcoders.co/" target="blank" >
                         <img src="image/coding2.jpg" width="100%" height="300px" class="site__list-img"> 
                     </div>
                     <div class="site__list-hoverdesc">
@@ -185,7 +184,8 @@
 
 <!-- 스크립트 -->
     <script defer src="hrefsite-navbar.js"></script>
-    <script defer src="hrefsite-navbar.js"></script>
+    <script src="hreftsite-clickmenu.js"> </script>
+    
     <script defer src="https://kit.fontawesome.com/66fd1dbf65.js" crossorigin="anonymous">
     </script>
 </body>
