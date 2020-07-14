@@ -155,23 +155,6 @@
 
 
 
-    @media all and (max-width: 768px) {
-
-
-        .site__list {
-            width: 50%;
-        
-        }
-
-        .searchbar {
-            margin-top: 10px;
-            margin-bottom: 60px;
-            width: 60%;
-        }
-
-    }
-
-
     @media all and (max-width: 476px) {
         .navbar {
             flex-direction: column;
@@ -189,6 +172,27 @@
         
         .searchbar {
             width: 70%;
+        }
+
+    }
+
+    @media all and (min-width:477px) and (max-width: 640px) {
+        .navbar__list {
+            width: 20%;
+        }
+    }
+    @media all and (max-width: 768px) {
+
+
+        .site__list {
+            width: 50%;
+        
+        }
+
+        .searchbar {
+            margin-top: 10px;
+            margin-bottom: 60px;
+            width: 60%;
         }
 
     }
