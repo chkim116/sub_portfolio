@@ -18,17 +18,6 @@ function clickDel () {
 }
 }
 
-function clickMenu () {
-    for (i=0; i < listBtn.length; i++){
-       listBtn[i].addEventListener("click", function (e) {
-            const target = e.target;
-            if(target != hasClass) {
-                target.classList.add(SELECT);
-            }
-        });
-    }
-}
-
 function clickList () {
     for (i=0; i < listBtn.length; i++) {
         listBtn[i].addEventListener("click", function(e) {
@@ -74,3 +63,7 @@ init();
 // document.getElementById는 단일 DOM 객체를 가져오지만, document.querySelectorAll은 NodeCollection을 가져오기 때문입니다.
 // 또한 NodeCollection은 숫자 인덱스를 가지고 있고 length property를 가지고 있지만, 배열은 아니므로 forEach등의 Iterator Function을 호출할 수 없습니다.
 // for(var i = 0; i<selectall.length; i++) {selectall[i].addEventListener(…)
+
+
+// 새로운 사실. 쿼리셀렉올은 classlist도, add이벤트리스너도 안된다.. 제길//./
+// 그리고 특정 함수에 필요한 const는 가급적 함수 안에서 정의하자.. 오늘 hasClass때문에 몇시간을 잡아먹혔다
