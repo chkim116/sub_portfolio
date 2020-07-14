@@ -180,6 +180,10 @@
         .navbar__list {
             width: 20%;
         }
+
+        .site__list-hoverdesc {
+            font-size: 1.1rem;
+        }
     }
     @media all and (max-width: 768px) {
 
