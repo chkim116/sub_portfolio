@@ -13,7 +13,6 @@ function clickDel () {
             const target = e.target;
                 hasClass.classList.remove(SELECT);
                 target.classList.add(SELECT);
-            console.log(target);
         });
 }
 }
