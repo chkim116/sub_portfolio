@@ -7,3 +7,5 @@
 If you allow access,
 I get your location and weather.
 then I will show you your location and weather.
+
+with vanilla JS
