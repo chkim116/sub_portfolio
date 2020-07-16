@@ -5,110 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello What to do today?</title>
     <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            font-family: 'Do Hyeon', sans-serif;
-            box-sizing: border-box;
-        }
-
-        li {
-            list-style: none;
-        }
-
-        #article {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            width: 100%;
-            height: 92vh;
-        }
-        
-
-        .title {
-            padding-top: 50px;
-            color: red;
-            font-size: 4rem;
-        }
-
-        .clock {
-            font-size: 4.5rem;
-            color:#eb3b5a;
-        }
-
-
-        .clicked {
-            color: gray;
-        }
-
-        .greetings {
-            font-size: 2rem;
-            padding-top: 50px;
-            color: #4b6584;
-        }
-        .form,
-        .greetings {
-            display: none;
-        }
-        .showing {
-            display: block;
-        }
-
-        .bg__show {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-        }
-        
-        input {
-            margin-top: 20px;
-            padding: 10px;
-            width: 250px;
-            border-radius: 5px;
-            background-color: transparent;
-            border: 0.5px solid #2bcbba;
-            font-size: 1.3rem;
-            text-align: center;
-        }
-        .js-toDoList {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-
-        .js-toDoList > li {
-            font-size: 16px;
-            width: 250px;
-        }
-
-        button {
-            background-color: transparent;
-            border: none;
-            font-size: 16px;
-        }
-        .comeon {
-            width: 50px;
-            height: 50px;
-            box-shadow:rgba(32, 33, 36, 0.78) 0px 1px 6px 0px;
-            cursor: pointer;
-        }
-
-        .js-weather {
-            margin: 20px;
-            float: right;
-        }
-    </style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <span class="js-weather"></span>
     <section id="section">
-        <div class="comeon"> <a href="hrefSite.html"><img src="image/mdn.jpg" width=50px height="50px"></a></div>
         <article id="article">
             
             <div class="bg">
